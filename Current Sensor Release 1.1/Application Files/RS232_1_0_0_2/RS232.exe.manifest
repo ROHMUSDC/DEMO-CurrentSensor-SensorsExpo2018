@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="RS232.exe" version="1.0.0.2" publicKeyToken="bced844b33c9cd73" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RS232" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="RS232.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks.Vs" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CircularGauge.dll" size="33280">
+      <assemblyIdentity name="CircularGauge" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>rfg3RY9fNucAt0pUND+JVV40HB4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CircularProgressBar.dll" size="16896">
+      <assemblyIdentity name="CircularProgressBar" version="2.5.6403.13419" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>E29Qt7szYd4bzl33U6SQAnxhHHU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RS232.exe" size="31744">
+      <assemblyIdentity name="RS232" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>77CmmQMnsJGnFjtMp4L4lx//6Ug=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinFormAnimation.dll" size="37376">
+      <assemblyIdentity name="WinFormAnimation" version="1.5.6298.3372" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ssOhWVCYtL0esG6/ET6tfeWhBLk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=ROHMELEC\akumar" issuerKeyHash="1ac09f1de36fd68801e44ed9fe51e6332f2f4bb0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>AOdAiStpEVaHceb7ZSAxTpsl2YY=</DigestValue></Reference></SignedInfo><SignatureValue>wwFnZA8NymxfUeZDz9P2nUe7YaUrET1RAbyniqziabvJTkKFq3Vk1UiP3VoGBBiyph8GXI/D5nl0DUpaWZRggdzZeBD8HXu6AAqsLXb5ppGaEZtKSPBHG/DD5tePV0U3lKbOzh8ChdSr1TwoksTCSqxFWCFX/wkcXgww9u0Hspg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yof4ZAvJHHMTifaIj/1KGsiXgm/3j0VdXZSFf+e39+t/LygXQxl8QNOARY42tjvCuAIHVsAlkgLxC9u8/WCI0bV53LA4EM5ijVzeW0MGFAV+lbUxiDNxNfgK6dnIzNS9IXv5kxoaaBiz0ancVsHlYOvPe3M/rcUnQY/zNkIh2i8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="86d9259b4e312065fbe671875611692b8940e700" Description="" Url=""><as:assemblyIdentity name="RS232.exe" version="1.0.0.2" publicKeyToken="bced844b33c9cd73" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ROHMELEC\akumar</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>pZhYTTksj6IW9MVQH64GHNH50O8=</DigestValue></Reference></SignedInfo><SignatureValue>RVQ9mJ0+FUSR/MgvwwDhE35Jl+XQOJx+p9jVPK5FEtz2L4Ivt3oDrtLpzLHFeUF36pRFcELOdwxPatuuNHG2p5YoyqsZs4WqdmsHLdT3W42zvDmgMLCGubnwfv6J0CJlN2nBOpihDlX7ZJ4U80PBJltIka/dMGoPbahwLJmj7cA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yof4ZAvJHHMTifaIj/1KGsiXgm/3j0VdXZSFf+e39+t/LygXQxl8QNOARY42tjvCuAIHVsAlkgLxC9u8/WCI0bV53LA4EM5ijVzeW0MGFAV+lbUxiDNxNfgK6dnIzNS9IXv5kxoaaBiz0ancVsHlYOvPe3M/rcUnQY/zNkIh2i8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQFRZuVymPSIdKtcDf/AFzqjANBgkqhkiG9w0BAQUFADApMScwJQYDVQQDHh4AUgBPAEgATQBFAEwARQBDAFwAYQBrAHUAbQBhAHIwHhcNMTgwNjIwMjEzNjU1WhcNMTkwNjIxMDMzNjU1WjApMScwJQYDVQQDHh4AUgBPAEgATQBFAEwARQBDAFwAYQBrAHUAbQBhAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMqH+GQLyRxzE4n2iI/9ShrIl4Jv949FXV2UhX/nt/frfy8oF0MZfEDTgEWONrY7wrgCB1bAJZIC8QvbvP1giNG1edywOBDOYo1c3ltDBhQFfpW1MYgzcTX4CunZyMzUvSF7+ZMaGmgYs9Gp3FbB5WDrz3tzP63FJ0GP8zZCIdovAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAvwXZSAVU7cccV/X/axH9aXaOzjQLs9FVb9d5wuGEF/z4TRkY66Xa9WDJuVblhF0J/u9buEufenhm3/+Wx8R9bx82hpBJGsQSQOZzf7NBEF78Ci21C2VVvdsNLaqUaChYBa7AwXbvmwLUot1T+nxfGNnpXLbRauJbwMxLNC0BKhM=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
